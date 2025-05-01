@@ -1,67 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessibilidade para Todos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acessogeral - Acessibilidade para Todos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>Acessogeral</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#melhorias">Melhorias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>Bem-vindo ao site de Acessibilidade</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre" aria-label="Saiba mais sobre acessibilidade">Sobre</a></li>
-                <li><a href="#melhorias" aria-label="Melhorias para sites acessíveis">Melhorias</a></li>
-                <li><a href="#contato" aria-label="Entre em contato conosco">Contato</a></li>
-                <li><a href="#acessibilidade" aria-label="Como melhorar a acessibilidade">Como melhorar?</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <section id="sobre">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        O projeto Acessogeral foi criado com o objetivo de promover a acessibilidade digital para todos os usuários, independentemente de suas limitações físicas, visuais ou cognitivas. Buscamos um design limpo, funcional e inclusivo. Este site é resultado de um esforço pessoal para aprender e aplicar boas práticas de desenvolvimento web. Ele utiliza fontes ampliadas, contraste adequado e estrutura organizada para facilitar a navegação. Além disso, toda a estrutura foi planejada sem o uso de imagens, tornando o carregamento mais leve e acessível para diferentes dispositivos e conexões. Com isso, demonstramos que é possível criar soluções acessíveis mesmo com recursos simples. Acreditamos que a web deve ser um espaço para todos — e isso começa com cada site que construímos. Este projeto também serve como inspiração para estudantes que estão iniciando no mundo da tecnologia, mostrando que com dedicação é possível criar algo funcional e relevante.
+      </p>
+    </section>
 
-    <main>
-        <section id="sobre">
-            <h2>O que é acessibilidade?</h2>
-            <p>A acessibilidade na web é a prática de garantir que os sites sejam utilizáveis por pessoas com diferentes deficiências, como deficiências visuais, auditivas ou motoras. Melhorar a acessibilidade é essencial para tornar a internet mais inclusiva.</p>
-            <button>Saiba mais</button>
-        </section>
+    <section id="melhorias">
+      <h2>Melhorias Futuras</h2>
+      <ul>
+        <li>Adicionar recursos de leitura por voz para deficientes visuais.</li>
+        <li>Compatibilidade com teclado para todos os elementos.</li>
+        <li>Implementar versão em Libras (Língua Brasileira de Sinais).</li>
+        <li>Adicionar temas claros e escuros.</li>
+      </ul>
+    </section>
 
-        <section id="melhorias">
-            <h2>Melhorias para sites acessíveis</h2>
-            <p>Existem várias formas de melhorar a acessibilidade em um site. Algumas das principais práticas incluem:</p>
-            <ul>
-                <li><strong>Uso de contrastes adequados</strong> entre texto e fundo.</li>
-                <li><strong>Texto alternativo</strong> para imagens e vídeos.</li>
-                <li><strong>Facilidade de navegação</strong> por meio de teclado ou outros dispositivos assistivos.</li>
-                <li><strong>Fontes legíveis</strong> e tamanhos de texto ajustáveis.</li>
-                <li><strong>Foco visível</strong> durante a navegação com o teclado.</li>
-            </ul>
-            <button>Descubra como aplicar essas melhorias</button>
-        </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para mais informações sobre acessibilidade na web.</p>
-            <button>Entre em contato</button>
-        </section>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
 
-        <section id="acessibilidade">
-            <h2>Como melhorar a acessibilidade</h2>
-            <p>Confira algumas dicas simples para tornar seu site mais acessível:</p>
-            <ul>
-                <li>Use <code>aria-label</code> e <code>aria-hidden</code> corretamente.</li>
-                <li>Escolha boas combinações de cores, com contraste adequado.</li>
-                <li>Permita que o conteúdo seja navegado por teclado.</li>
-                <li>Forneça alternativas de texto para imagens e vídeos.</li>
-                <li>Use títulos e cabeçalhos corretamente para organizar o conteúdo.</li>
-            </ul>
-        </section>
-    </main>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" />
 
-    <footer>
-        <p>&copy; 2025 - Acessibilidade para Todos | <a href="#contato">Entre em contato</a></p>
-    </footer>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Acessogeral - Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
