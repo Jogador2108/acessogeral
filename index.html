@@ -3,30 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessibilidade para Todos</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acessogeral - Site Acessível</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Acessibilidade para Todos</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>O que é Acessibilidade?</h2>
-            <p>Acessibilidade digital é um conjunto de práticas que visam tornar o conteúdo digital acessível para o maior número possível de pessoas, incluindo pessoas com deficiência.</p>
-        </section>
-        
-        <section>
-            <h2>Importância da Acessibilidade</h2>
-            <p>Garantir acessibilidade é fundamental para criar um ambiente inclusivo e permitir que todos tenham acesso à informação e recursos.</p>
-        </section>
-    </main>
+    <section id="home">
+        <h1>Bem-vindo ao Acessogeral!</h1>
+        <p>Nosso compromisso é criar soluções que tornam a internet mais acessível para todos.</p>
+        <button><a href="#servicos">Saiba Mais</a></button>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma equipe dedicada a melhorar a acessibilidade digital. Nosso objetivo é garantir que todas as pessoas, independentemente de suas habilidades, possam navegar na web de maneira fácil e intuitiva.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="servico">
+            <h3>Consultoria de Acessibilidade</h3>
+            <p>Oferecemos análise e melhoria da acessibilidade de sites e aplicativos.</p>
+        </div>
+        <div class="servico">
+            <h3>Treinamento e Capacitação</h3>
+            <p>Treinamos equipes para implementar práticas acessíveis de desenvolvimento web.</p>
+        </div>
+        <div class="servico">
+            <h3>Desenvolvimento de Sites Acessíveis</h3>
+            <p>Construímos sites do zero com foco na acessibilidade para todos os usuários.</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form class="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Acessibilidade para Todos</p>
+        <p>&copy; 2025 Acessogeral - Todos os direitos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
