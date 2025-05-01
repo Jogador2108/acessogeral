@@ -1,3 +1,10 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Definições gerais */
 body {
     font-family: Arial, sans-serif;
@@ -7,17 +14,20 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px; /* Aumentei o tamanho da fonte */
+    transition: background-color 0.5s ease-in-out;
 }
 
+/* Header */
 header {
-    background-color: #0044cc; /* Cor de fundo acessível */
+    background-color: #0044cc;
     color: white;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
@@ -27,7 +37,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -35,30 +45,71 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 nav ul li a:focus {
-    outline: 3px solid yellow; /* Foco visível */
+    outline: 3px solid #ffcc00;
 }
 
+/* Main content */
 main {
     padding: 20px;
     background-color: #ffffff;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     color: #0044cc;
+    margin-bottom: 10px;
 }
 
-/* Adicionando alto contraste e tamanhos de fontes acessíveis */
+button {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+button:focus {
+    outline: 3px solid #ffcc00;
+}
+
+/* Listas */
 ul {
-    list-style-type: square;
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
+ul li {
+    margin: 10px 0;
+}
+
+code {
+    background-color: #e1e1e1;
+    padding: 2px 5px;
+    font-size: 1.1em;
+}
+
+/* Footer */
 footer {
     text-align: center;
     background-color: #0044cc;
@@ -66,7 +117,25 @@ footer {
     padding: 10px;
 }
 
-/* Melhorando a legibilidade do texto */
-p {
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Estilos para aumentar a legibilidade e acessibilidade */
+p, ul, li {
     font-size: 1.1em;
+    line-height: 1.8;
+}
+
+section button {
+    margin-top: 15px;
 }
