@@ -3,67 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Acessogeral - Site Acessível</title>
+    <title>Acessibilidade para Todos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
+        <h1>Bem-vindo ao site de Acessibilidade</h1>
         <nav>
             <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre" aria-label="Saiba mais sobre acessibilidade">Sobre</a></li>
+                <li><a href="#melhorias" aria-label="Melhorias para sites acessíveis">Melhorias</a></li>
+                <li><a href="#contato" aria-label="Entre em contato conosco">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Bem-vindo ao Acessogeral!</h1>
-        <p>Nosso compromisso é criar soluções que tornam a internet mais acessível para todos.</p>
-        <button><a href="#servicos">Saiba Mais</a></button>
-    </section>
+    <main>
+        <section id="sobre">
+            <h2>O que é acessibilidade?</h2>
+            <p>A acessibilidade na web é a prática de garantir que os sites sejam utilizáveis por pessoas com diferentes deficiências, como deficiências visuais, auditivas ou motoras.</p>
+        </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma equipe dedicada a melhorar a acessibilidade digital. Nosso objetivo é garantir que todas as pessoas, independentemente de suas habilidades, possam navegar na web de maneira fácil e intuitiva.</p>
-    </section>
+        <section id="melhorias">
+            <h2>Melhorias para sites acessíveis</h2>
+            <p>Existem diversas melhorias que podemos implementar para tornar os sites mais acessíveis, como:</p>
+            <ul>
+                <li>Uso de contrastes adequados</li>
+                <li>Uso de textos alternativos para imagens</li>
+                <li>Foco visível para navegação com teclado</li>
+            </ul>
+        </section>
 
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <div class="servico">
-            <h3>Consultoria de Acessibilidade</h3>
-            <p>Oferecemos análise e melhoria da acessibilidade de sites e aplicativos.</p>
-        </div>
-        <div class="servico">
-            <h3>Treinamento e Capacitação</h3>
-            <p>Treinamos equipes para implementar práticas acessíveis de desenvolvimento web.</p>
-        </div>
-        <div class="servico">
-            <h3>Desenvolvimento de Sites Acessíveis</h3>
-            <p>Construímos sites do zero com foco na acessibilidade para todos os usuários.</p>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form class="formulario">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para saber mais sobre acessibilidade.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Acessogeral - Todos os direitos reservados.</p>
+        <p>&copy; 2025 - Acessibilidade para Todos</p>
     </footer>
+
 </body>
 </html>
